@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Job cover</title>
+</head>
+<body>
+    <section>
+        <header  class="mx-5 md:mx-[10%] my-10">
+            <div class="flex flex-wrap gap-5 justify-between items-center">
+                <label for="technologyFiled">Enter your technology: <br>
+                    <input type="text" id="technologyFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="jobNoFiled">Enter job no: <br>
+                    <input type="text" id="jobNoFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="subjectNameFiled">Enter subject name: <br>
+                    <input type="text" id="subjectNameFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="subjectCodeFiled">Enter subject code: <br>
+                    <input type="text" id="subjectCodeFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="jobNameFiled">Enter job name: <br>
+                    <input type="text" id="jobNameFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="studentNameFiled">Enter your name: <br>
+                    <input type="text" id="studentNameFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="rollFiled">Enter your roll: <br>
+                    <input type="text" id="rollFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="regFiled">Enter your reg: <br>
+                    <input type="text" id="regFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="SemesterFiled">Enter your semester: <br>
+                    <input type="text" id="SemesterFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="shiftFiled">Enter your shift: <br>
+                    <input type="text" id="shiftFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="SessionFiled">Enter your session: <br>
+                    <input type="text" id="SessionFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="teacherNameFiled">Enter teacher name: <br>
+                    <input type="text" id="teacherNameFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="teacherDesignationFiled">Enter teacher designation: <br>
+                    <input type="text" id="teacherDesignationFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="chillFiled">Enter teacher designation: <br>
+                    <input type="date" id="chillFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+                <label for="submittedDateFiled">Enter submittedDate: <br>
+                    <input type="date" id="submittedDateFiled"  class="input input-bordered w-full my-2 text-black">
+                </label><br>
+            </div>
+            
+            <button class="btn my-5" id="btn">Generate</button>
+        </header>
+        <main class="w-[1240px] h-[1754px] overflow-x-scroll my-20 border-8 mx-auto px-10 py-20">
+            <div class="border-8 border-black  px-10 py-20 h-full">
+                <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold uppercase text-center my-10">moulvibazar polytechnic institute</h1>
+                <img src="./logo.jpeg" alt="" class="w-52 mx-auto my-10">
+                <div class="text-center my-10">
+                    <h1 class="text-3xl font-bold text-center uppercase mb-5">
+                        <span id="technology" class="border-b-4 border-dotted border-black">computer</span> Technology
+                    </h1>
+                    <h1 class="text-3xl font-bold text-center uppercase">
+                        Job no: <span id="jobNo" class="border-b-4 border-dotted border-black">00</span>
+                    </h1>
+                </div>
+                <div class="my-10">
+                    <h1 class="text-2xl font-bold my-5">SUBJECT NAME: <span id="subjectName" class="border-b-2 font-medium border-dotted border-black my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iure repudiandae ad ut doloribus libero!</span></h1>
+                    <h1 class="text-2xl font-bold my-5">SUBJECT CODE: <span id="subjectCode" class="border-b-2 font-medium border-dotted border-black my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iure repudiandae ad ut doloribus libero!</span></h1>
+                    <h1 class="text-2xl font-bold my-5">JOB NAME: <span id="jobName" class="border-b-2 font-medium border-dotted border-black my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iure repudiandae ad ut doloribus libero!</span></h1>
+                </div>
+                <div class="flex border-2 border-black my-16 rounded">
+                    <div class="text-xl font-semibold p-4 border-r-2 border-black w-3/5">
+                        <h1 class=" font-bold mb-2">Submitted by:</h1>
+                        <h1 class="flex items-center gap-1 my-2">Student Name: <span id="studentName" class="border-b-2 font-medium border-dotted border-black my-1 w-full flex-1">Lorem, ipsum dolor.</span></h1>
+                        <div class="flex justify-between items-center gap-2">
+                            <h1 class="flex items-center gap-1 my-2 flex-1">Roll No: <p id="roll" class="border-b-2 font-medium border-dotted border-black my-1 w-full flex-1">00000000000</p></h1>
+                            <h1 class="flex items-center gap-1 my-2 flex-1">Reg No: <p id="reg" class="border-b-2 font-medium border-dotted border-black my-1 w-full flex-1">00000000000</p></h1>
+                        </div>
+                        <div class="flex justify-between items-center gap-2">
+                            <h1 class="flex items-center gap-1 my-2 flex-1">Semester: <p id="Semester" class="border-b-2 font-medium border-dotted border-black my-1 w-full flex-1">1st</p></h1>
+                            <h1 class="flex items-center gap-1 my-2 flex-1">Shift: <p id="shift" class="border-b-2 font-medium border-dotted border-black my-1 w-full flex-1">1st</p></h1>
+                        </div>
+                        <h1 class="flex items-center gap-1 my-2">Session: <p id="Session" class="border-b-2 font-medium border-dotted border-black my-1 w-full flex-1">10-11</p></h1>
+                    </div>
+                    <div class="text-xl font-semibold p-4 border-l-2 border-black w-2/5">
+                        <h1 class=" font-bold mb-4">Submitted To/Remarks:</h1>
+                        <div class="text-2xl font-bold text-center space-y-2">
+                            <h1 id="teacherName">Debashish Roy</h1>
+                            <h1 id="teacherDesignation">Instructor</h1>
+                            <h1>Moulvibazar polytechnic institute</h1>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-2xl font-bold text-right mr-[10%] my-5">Teacher Signature</h1>
+                <div class="my-12">
+                    <h1 class="text-2xl font-bold my-5">Job Date: <span id="chill" class="border-b-2 font-medium border-dotted border-black my-2">2023/01/01</span></h1>
+                    <h1 class="text-2xl font-bold">Submitted Date: <span id="submittedDate" class="border-b-2 font-medium border-dotted border-black my-2">2023/01/01</span></h1>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function () {
+            inputValue('chillFiled','chill');
+            inputValue('submittedDateFiled','submittedDate');
+            inputValue('technologyFiled','technology');
+            inputValue('jobNoFiled','jobNo');
+            inputValue('subjectNameFiled','subjectName');
+            inputValue('subjectCodeFiled','subjectCode');
+            inputValue('jobNameFiled','jobName');
+            inputValue('studentNameFiled','studentName');
+            inputValue('rollFiled','roll');
+            inputValue('regFiled','reg');
+            inputValue('SemesterFiled','Semester');
+            inputValue('shiftFiled','shift');
+            inputValue('SessionFiled','Session');
+            inputValue('teacherNameFiled','teacherName');
+            inputValue('teacherDesignationFiled','teacherDesignation');
+            inputValue('instituteFiled','institute');
+        })
+
+        function inputValue(inputId, innerTextId) {
+            const inputFilet = document.getElementById(inputId);
+            const value = inputFilet.value;
+            inputFilet.value = '';
+            document.getElementById(innerTextId).innerText = value;
+        }
+    </script>
+</body>
+</html>
